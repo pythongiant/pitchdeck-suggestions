@@ -21,6 +21,8 @@ def read_pdf(file):
         text += page.get_text()
     system = """
     This is a pitch deck transcript. Give a Page By Page Review of the entire transcript. Suggest possible improvements and suggestions. A good pitch deck is essential for effectively communicating your business idea, product, or service to potential investors, partners, or customers.
+    Whenever possible Give Suggestive Content Replacements marking content that can be replaced with something more impactive. Give industry relevant feedback. 
+
     It should contain these details: 
     Cover Slide: The cover slide should include your company's name, logo, and a tagline or brief description that encapsulates your value proposition.
 
