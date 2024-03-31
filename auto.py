@@ -11,7 +11,6 @@ st.markdown(
     f'<img src="https://evalian.co.uk/wp-content/uploads/2022/06/logo.png" style="max-width:25%; background-color:white; height:auto;">', 
     unsafe_allow_html=True
 )
-st.title("Profile Analyser")
 def read_pdf(file):
     text = ""
     pdf_document = fitz.open(stream=file.getvalue(), filetype="pdf")
@@ -59,7 +58,7 @@ def read_pdf(file):
     return completion.choices[0].message.content
 def main():
 
-    st.title("PDF Text Extractor")
+    st.title("PDF Pitch Extractor")
 
     uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
 
