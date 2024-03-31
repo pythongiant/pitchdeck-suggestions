@@ -3,6 +3,15 @@ import fitz  # PyMuPDF
 import os
 from openai import OpenAI
 client = OpenAI(api_key=st.secrets['api_key'])
+st.set_page_config(
+    page_title="HUBX",
+    page_icon="./logo.ico  ",
+)
+st.markdown(
+    f'<img src="https://evalian.co.uk/wp-content/uploads/2022/06/logo.png" style="max-width:25%; background-color:white; height:auto;">', 
+    unsafe_allow_html=True
+)
+st.title("Profile Analyser")
 def read_pdf(file):
     text = ""
     pdf_document = fitz.open(stream=file.getvalue(), filetype="pdf")
