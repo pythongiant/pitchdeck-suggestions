@@ -58,7 +58,7 @@ def read_pdf(file):
     return completion.choices[0].message.content
 def main():
 
-    st.title("PDF Pitch Extractor")
+    st.title("investment memo assistant")
 
     uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
 
